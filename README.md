@@ -18,7 +18,7 @@ $ docker build -t custominage . \
 $ docker run -dt --name=customcontainer -p 80:80 customimage \
 -> Here -dt stands for docker running on detachable mode, which means docker will not hold the terminal & will go background aster runnung it, -p 80:80 means we are mapping host port 80 : container port 80 so that if we curl localhostIP:80 we will able to access the nginx service running on the container from our host machine 
 
-# STEP 4: Now lets inspect the container & see it's logs
+# STEP 4: Inspect the container & see it's logs
 $ docker inspect customcontainer \
 -> This will show all the configurations of the container \
 $ docker logs customcontainer \
